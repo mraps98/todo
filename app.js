@@ -13,6 +13,7 @@ $(document).ready(function(){
     App.update = function(){
         $("#todolist").empty();
         $("#donelist").empty();
+        $("#todoinput").val("");
         for(var i = 0; i < App.todo.length; i++){
             $("#todolist").append("<li><button class='donebutton' data-text='" + App.todo[i] + "'>Done</button>" + App.todo[i] + "</li>");
         }
@@ -44,8 +45,15 @@ $(document).ready(function(){
         App.done.splice(index,1);
         App.update();
     });
-
-
+    
+    $(document).keypress(function(e){
+        if (e.which == 13 && $("#todoinput").val() ){
+            console.log("add");
+            let temp = $("#todoinput").val();
+            App.todo.push(temp);
+            App.update();
+        }
+    });
 
     App.start();
 });
