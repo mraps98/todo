@@ -60,7 +60,7 @@ $(document).ready(function(){
         $("#donelist").empty();
         $("#todoinput").val("");
         for(var i = 0; i < App.todo.length; i++){
-            $("#todolist").append("<li id='"+ i + "' class='listitem'><button class='donebutton' data-text='" + App.todo[i] + "'>Done</button> <span class='clickableitem' data-index='"+ i + "'>" + App.todo[i] + "</span></li><li class='editinput' id='listitem"+i + "'><button class='doneeditbutton' data-input='"+i+"'>Done</button><input id='input" + i + "' type='text' value ='" + App.todo[i] + "'></li>");
+            $("#todolist").append("<li id='"+ i + "' class='listitem'><button class='donebutton' data-text='" + App.todo[i] + "'>Done</button> <span class='clickableitem' data-index='"+ i + "'>" + App.todo[i] + "</span></li><li class='editinput' id='listitem"+i + "'><button class='doneeditbutton' data-input='"+i+"'>Done</button><input id='input" + i + "' type='text' class='editinputbox' value ='" + App.todo[i] + "'></li>");
         }
         for(var i = 0; i < App.done.length; i++){
             $("#donelist").append("<li><button class='removebutton' data-text='" + App.done[i] + "'>Remove</button> " + App.done[i] + "</li>");

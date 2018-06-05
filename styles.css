@@ -53,3 +53,24 @@ td h2{
 body{
     background-color: black;
 }
+
+.clickableitem{
+    display:inline-block;
+    border-bottom: 1px solid black;
+}
+.clickableitem:hover{
+    background-color: rgb(228, 244, 80);
+}
+
+#todoinput{
+    width:80%;
+}
+#todoinput:hover{
+    background-color:#f4d742;
+    transition-duration:0.5s;
+}
+
+.editinputbox{
+    transition-duration:1s;
+    background-color:rgb(228,244,80);
+}
