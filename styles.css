@@ -60,6 +60,12 @@ body{
 }
 .clickableitem:hover{
     background-color: rgb(228, 244, 80);
+    transition-duration:0.5s;
+    cursor:pointer;
+}
+
+button:hover{
+    cursor:pointer;
 }
 
 #todoinput{
@@ -71,6 +77,5 @@ body{
 }
 
 .editinputbox{
-    transition-duration:1s;
     background-color:rgb(228,244,80);
 }
