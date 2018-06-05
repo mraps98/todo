@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-theme: jekyll-theme-time-machine,
 encoding: UTF-8,
 future:true
-=======
 theme: jekyll-theme-cayman
->>>>>>> 4f368765276d1d04b8815ed5fc66146501e0dc93
+
