@@ -9,8 +9,10 @@ $(document).ready(function(){
     App.start = function(){
         $(document).on('click','#addbutton',function(){
             console.log("add");
-            let temp = $("#todoinput").val();
-            App.todo.push(temp);
+            if ($("#todoinput").val()){
+                let temp = $("#todoinput").val();
+                App.todo.push(temp);
+            }
             App.update();
         });
     
